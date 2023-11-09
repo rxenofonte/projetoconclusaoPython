@@ -1,0 +1,11 @@
+DROP DATABASE IF EXISTS starkind;
+CREATE DATABASE IF NOT EXISTS starkind;
+USE starkind;
+CREATE TABLE tarefas (
+	id VARCHAR(100) NOT NULL UNIQUE,
+    tarefa VARCHAR(100) NOT NULL,
+    descricao VARCHAR(200) NOT NULL,
+    dtini DATETIME NOT NULL,
+    dtfim DATETIME NOT NULL,
+    status VARCHAR(100) NOT NULL
+);
